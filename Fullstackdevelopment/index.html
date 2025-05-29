@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Weather App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🌤️ Weather Dashboard</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name"/>
+    <button onclick="getWeather()">Get Weather</button>
+    
+    <div id="weatherCard" class="card hidden">
+      <h2 id="cityName"></h2>
+      <img id="weatherIcon" alt="Weather Icon" />
+      <p><strong>Condition:</strong> <span id="description"></span></p>
+      <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
+      <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+      <p><strong>Wind Speed:</strong> <span id="wind"></span> m/s</p>
+      <p><strong>Last Updated:</strong> <span id="updatedTime"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
